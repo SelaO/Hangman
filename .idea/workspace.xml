@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="7ecf34bf-2b26-400d-bfbd-53840ae6ee81" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ProjectId" id="1d8KZPpbIdHZwRIwgoSNtApcxFu" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RunManager">
+    <configuration name="HangmanPlayer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.netomedia.exam.hangman.player.HangmanPlayer" />
+      <module name="hangman-player" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.netomedia.exam.hangman.player.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.HangmanPlayer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7ecf34bf-2b26-400d-bfbd-53840ae6ee81" name="Default Changelist" comment="" />
+      <created>1591801334037</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1591801334037</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="780" y="259" key="#xdebugger.evaluate" timestamp="1591809704851">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="780" y="259" key="#xdebugger.evaluate/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591809704850" />
+    <state width="500" height="466" key="DebuggerActiveHint" timestamp="1591809806435">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="500" height="466" key="DebuggerActiveHint/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591809806435" />
+    <state width="2005" height="325" key="GridCell.Tab.0.bottom" timestamp="1591810198387">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="325" key="GridCell.Tab.0.bottom/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810198387" />
+    <state width="2005" height="325" key="GridCell.Tab.0.center" timestamp="1591810198387">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="325" key="GridCell.Tab.0.center/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810198387" />
+    <state width="2005" height="325" key="GridCell.Tab.0.left" timestamp="1591810198386">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="325" key="GridCell.Tab.0.left/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810198386" />
+    <state width="2005" height="325" key="GridCell.Tab.0.right" timestamp="1591810198387">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="325" key="GridCell.Tab.0.right/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810198387" />
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1591809829164">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.bottom/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591809829164" />
+    <state width="2005" height="376" key="GridCell.Tab.1.center" timestamp="1591809829164">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.center/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591809829164" />
+    <state width="2005" height="376" key="GridCell.Tab.1.left" timestamp="1591809829164">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.left/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591809829164" />
+    <state width="2005" height="376" key="GridCell.Tab.1.right" timestamp="1591809829164">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state width="2005" height="376" key="GridCell.Tab.1.right/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591809829164" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/netomedia/exam/hangman/player/HangmanPlayer.java</url>
+          <line>64</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="chosenLetter" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+</project>
