@@ -18,7 +18,7 @@ public class HangmanPlayer {
     public static void main(String[] args) throws Exception {
         ServerResponse serverResponse = server.startNewGame();
         if (serverResponse.getError() != null) {
-            System.out.println(serverResponse.getError()); // TODO: need spec of errors
+            System.out.println(serverResponse.getError()); // TODO: need spec of errors to handle them better
         }
 
         String token = serverResponse.getToken();
@@ -27,12 +27,9 @@ public class HangmanPlayer {
         Set<Character> correctLetters = new HashSet<>();
         Set<Character> wrongLetters = new HashSet<>();
 
-        HashMap<Character, Integer> wordOccurrenceBuckets;
-        HashMap<Character, Integer> letterOccurrenceBuckets;
-        List<Character> characters;
-        wordOccurrenceBuckets = createWordOccurrenceBuckets(workingDictionary);
-        letterOccurrenceBuckets = letterOccurrenceBuckets(workingDictionary);
-        characters = sortMap(wordOccurrenceBuckets, letterOccurrenceBuckets);
+        HashMap<Character, Integer> wordOccurrenceBuckets = createWordOccurrenceBuckets(workingDictionary);
+        HashMap<Character, Integer> letterOccurrenceBuckets = letterOccurrenceBuckets(workingDictionary);
+        List<Character> characters = sortMap(wordOccurrenceBuckets, letterOccurrenceBuckets);
 
         int solutionArrayIndex = 0;
         while (!serverResponse.getGameEnded()) {
@@ -41,7 +38,7 @@ public class HangmanPlayer {
 
             serverResponse = server.guess(token, chosenLetter);
             if (serverResponse.getError() != null) {
-                System.out.println(serverResponse.getError()); // TODO: need spec of errors
+                System.out.println(serverResponse.getError()); // TODO: need spec of errors to handle them better
                 if (serverResponse.getError().indexOf("Sorry, you lost!") > 0) {
                     break;
                 }

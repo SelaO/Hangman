@@ -7,6 +7,9 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1d8KZPpbIdHZwRIwgoSNtApcxFu" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -15,6 +18,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
@@ -59,22 +63,22 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="500" height="466" key="DebuggerActiveHint/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591809806435" />
-    <state width="2005" height="325" key="GridCell.Tab.0.bottom" timestamp="1591810198387">
+    <state width="2005" height="325" key="GridCell.Tab.0.bottom" timestamp="1591810441461">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="325" key="GridCell.Tab.0.bottom/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810198387" />
-    <state width="2005" height="325" key="GridCell.Tab.0.center" timestamp="1591810198387">
+    <state width="2005" height="325" key="GridCell.Tab.0.bottom/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810441461" />
+    <state width="2005" height="325" key="GridCell.Tab.0.center" timestamp="1591810441460">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="325" key="GridCell.Tab.0.center/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810198387" />
-    <state width="2005" height="325" key="GridCell.Tab.0.left" timestamp="1591810198386">
+    <state width="2005" height="325" key="GridCell.Tab.0.center/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810441460" />
+    <state width="2005" height="325" key="GridCell.Tab.0.left" timestamp="1591810441460">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="325" key="GridCell.Tab.0.left/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810198386" />
-    <state width="2005" height="325" key="GridCell.Tab.0.right" timestamp="1591810198387">
+    <state width="2005" height="325" key="GridCell.Tab.0.left/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810441460" />
+    <state width="2005" height="325" key="GridCell.Tab.0.right" timestamp="1591810441460">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
-    <state width="2005" height="325" key="GridCell.Tab.0.right/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810198387" />
+    <state width="2005" height="325" key="GridCell.Tab.0.right/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810441460" />
     <state width="2005" height="376" key="GridCell.Tab.1.bottom" timestamp="1591809829164">
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
@@ -91,6 +95,10 @@
       <screen x="0" y="0" width="2048" height="1112" />
     </state>
     <state width="2005" height="376" key="GridCell.Tab.1.right/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591809829164" />
+    <state x="681" y="259" key="run.anything.popup" timestamp="1591810422136">
+      <screen x="0" y="0" width="2048" height="1112" />
+    </state>
+    <state x="681" y="259" key="run.anything.popup/2560.231.1536.824/0.0.2048.1112@0.0.2048.1112" timestamp="1591810422136" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
