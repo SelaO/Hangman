@@ -28,15 +28,19 @@ public class HangmanPlayer {
         Set<Character> wrongLetters = new HashSet<>();
 
         HashMap<Character, Integer> wordOccurrenceBuckets = createWordOccurrenceBuckets(workingDictionary);
-        HashMap<Character, Integer> letterOccurrenceBuckets = letterOccurrenceBuckets(workingDictionary);
+        HashMap<Character, Integer> letterOccurrenceBuckets = createLetterOccurrenceBuckets(workingDictionary);
         List<Character> characters = sortMap(wordOccurrenceBuckets, letterOccurrenceBuckets);
 
-        int solutionArrayIndex = 0;
+        String chosenLetterOrWord;
         while (!serverResponse.getGameEnded()) {
 
-            String chosenLetter = characters.get(solutionArrayIndex).toString();
+            if (workingDictionary.size() == 1) {
+                chosenLetterOrWord = workingDictionary.get(0);
+            } else {
+                chosenLetterOrWord = characters.get(0).toString();
+            }
 
-            serverResponse = server.guess(token, chosenLetter);
+            serverResponse = server.guess(token, chosenLetterOrWord);
             if (serverResponse.getError() != null) {
                 System.out.println(serverResponse.getError()); // TODO: need spec of errors to handle them better
                 if (serverResponse.getError().indexOf("Sorry, you lost!") > 0) {
@@ -47,23 +51,21 @@ public class HangmanPlayer {
             token = serverResponse.getToken();
 
             if (serverResponse.isCorrect()) {
-                correctLetters.add(chosenLetter.charAt(0));
+                correctLetters.add(chosenLetterOrWord.charAt(0));
             } else {
-                wrongLetters.add(chosenLetter.charAt(0));
+                wrongLetters.add(chosenLetterOrWord.charAt(0));
             }
 
             int prevWorkingDictionarySize = workingDictionary.size();
             workingDictionary = filterWordsFromDictionaryAccordingToCharacters(workingDictionary, correctLetters, wrongLetters);
 
-            if (prevWorkingDictionarySize == workingDictionary.size()) {
-                solutionArrayIndex++; // move to the next letter if nothing has changed
-            } else {
-                solutionArrayIndex = 0; // take the first most common letter
+            if (prevWorkingDictionarySize != workingDictionary.size()) {
                 wordOccurrenceBuckets = createWordOccurrenceBuckets(workingDictionary);
-                letterOccurrenceBuckets = letterOccurrenceBuckets(workingDictionary);
+                letterOccurrenceBuckets = createLetterOccurrenceBuckets(workingDictionary);
                 characters = sortMap(wordOccurrenceBuckets, letterOccurrenceBuckets);
-                characters.removeAll(correctLetters); // remove letters we already checked
             }
+            characters.removeAll(correctLetters); // remove letters we already checked
+
         }
 
         System.out.println("Game Over");
@@ -73,13 +75,18 @@ public class HangmanPlayer {
     private static List<String> filterWordsFromDictionaryAccordingToCharacters(List<String> workingDictionary, Set<Character> correctLetters, Set<Character> wrongLetters) {
         // There's probably a better way with regex but I don't have time
         return workingDictionary.stream().filter(word -> {
+            boolean result = correctLetters.size() <= 0;
             for (int i = 0; i < word.length(); i++) {
                 Character currChar = word.charAt(i);
                 if (wrongLetters.contains(currChar)) {
                     return false;
                 }
+
+                if(correctLetters.contains(currChar)) {
+                    result = true; // don't add words that don't contain any correct letter
+                }
             }
-            return true;
+            return result;
         }).collect(Collectors.toList());
     }
 
@@ -118,7 +125,7 @@ public class HangmanPlayer {
         return result;
     }
 
-    private static HashMap<Character, Integer> letterOccurrenceBuckets(List<String> workingDictionary) {
+    private static HashMap<Character, Integer> createLetterOccurrenceBuckets(List<String> workingDictionary) {
         HashMap<Character, Integer> result = new HashMap<>();
 
         for (String word : workingDictionary) {
